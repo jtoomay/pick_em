@@ -1,13 +1,13 @@
-"use client"
-import { UserButton, useUser } from "@clerk/nextjs"
+import { getUser } from "@/app/lib/actions/user.actions"
+import { connectToDB } from "@/app/lib/mongoose"
+import { UserButton, auth, useUser } from "@clerk/nextjs"
 
-export default function Home() {
-  const { user } = useUser()
-  console.log(user?.fullName, "User")
+export default async function Home() {
+  const user = await getUser()
   return (
     <div className={Wrapper}>
       <div className={Header}>
-        <h1> Welcome {user?.fullName} </h1>
+        <h1> Welcome {user?.firstName + " " + user?.lastName} </h1>
         <UserButton />
       </div>
       Homepage that I just made
