@@ -9,6 +9,7 @@ export default async function Home() {
       <div className={Header}>
         <h1> Welcome {user?.firstName + " " + user?.lastName} </h1>
         <UserButton />
+        <a href="/profile">Profile</a>
       </div>
       Homepage that I just made
     </div>

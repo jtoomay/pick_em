@@ -20,11 +20,12 @@ export async function getUser() {
 
 // These are the props that can be used to update the user
 interface UserUpdateOptions {
-  favoriteTeam: string
-  username: string
+  favoriteTeam?: string
+  username?: string
 }
 
 export async function updateUser(options: UserUpdateOptions) {
+  console.log(options, "options")
   connectToDB()
   const clerkUser = auth()
   try {
