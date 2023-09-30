@@ -10,6 +10,7 @@ export default async function Profile() {
   console.log(user, "user")
   return (
     <div className="flex flex-col gap-4 w-full h-full p-10">
+      <span> Hello {user.firstName + " " + user.lastName}</span>
       <h1> Profile </h1>
       <a href="/">Home Page</a>
       <FavoriteTeam defaultTeam={user.favoriteTeam} />

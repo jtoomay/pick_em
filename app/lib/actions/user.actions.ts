@@ -29,7 +29,7 @@ export async function updateUser(options: UserUpdateOptions) {
   connectToDB()
   const clerkUser = auth()
   try {
-    User.findOneAndUpdate({ id: clerkUser.userId }, { $set: options }, { upsert: true })
+    await User.findOneAndUpdate({ id: clerkUser.userId }, { $set: options }, { upsert: true })
   } catch (err) {
     console.log("Error Message: ", err)
   }
