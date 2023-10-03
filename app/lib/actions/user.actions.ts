@@ -22,6 +22,7 @@ export async function getUser() {
 interface UserUpdateOptions {
   favoriteTeam?: string
   username?: string
+  bio?: string
 }
 
 export async function updateUser(options: UserUpdateOptions) {

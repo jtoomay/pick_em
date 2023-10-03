@@ -1,19 +1,22 @@
+"use server"
+
 import { getUser } from "@/app/lib/actions/user.actions"
 import React from "react"
 import FavoriteTeam from "./FavoriteTeam"
+import { UserProfile } from "@clerk/nextjs"
+import ProfileCard from "./ProfileCard"
+import Bio from "./Bio"
 
 // TODO: Make a layout and wrap this around the layout
 
 export default async function Profile() {
   const user = await getUser()
 
-  console.log(user, "user")
   return (
     <div className="flex flex-col gap-4 w-full h-full p-10">
-      <span> Hello {user.firstName + " " + user.lastName}</span>
-      <h1> Profile </h1>
-      <a href="/">Home Page</a>
+      <ProfileCard favoriteTeam={user.favoriteTeam} userBio={user.bio} />
       <FavoriteTeam defaultTeam={user.favoriteTeam} />
+      <Bio userBio={user.bio} />
     </div>
   )
 }

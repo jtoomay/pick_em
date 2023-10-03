@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   username: String,
+  bio: String,
 })
 
 // If a model has already been created, use that. If not, create a new model
