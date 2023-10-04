@@ -7,6 +7,11 @@ import User from "../models/user.model"
 export async function getUser() {
   connectToDB()
   const clerkUser = auth()
+  if (!clerkUser.userId) {
+    console.error("Not Authenticated With Clerk")
+    return {} // This empty object will avoid a error being thrown if we are not authenticated. The console will alert us
+  }
+
   const { firstName, lastName, username } = (await currentUser()) || {}
   try {
     const user = await User.findOne({ id: clerkUser.userId })
