@@ -3,9 +3,11 @@ import React from "react"
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className={Wrapper}>
       <Header />
       {children}
     </div>
   )
 }
+
+const Wrapper = `flex flex-col h-fit min-h-full`
