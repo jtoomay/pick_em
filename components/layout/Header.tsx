@@ -51,6 +51,6 @@ function ProfileCircle() {
 }
 
 const LinkStyles = "transition-all text-2xl duration-300 hover:text-blue-500 hover:translate-y-[-1px]"
-const HeaderStyles = "py-5 px-10 min-h-[96px] w-full bg-slate-900 flex justify-between"
+const HeaderStyles = "py-5 px-6 min-h-[96px] w-full bg-slate-900 flex justify-between sm:px-10 "
 const ProfileCardStyles = ""
 const NavigationStyles = " flex gap-8 h-fit "

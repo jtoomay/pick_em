@@ -2,11 +2,12 @@
 import { createPost } from "@/app/lib/actions/posts.actions"
 import React, { useState } from "react"
 
-export default function TestInput({ options }: any) {
+export default function TestInput(props: any) {
+  console.log("🚀 ~ file: TestInput.tsx:6 ~ TestInput ~ props:", props)
   const [postBody, setPostBody] = useState("")
   const id = (Math.random() * 100).toString()
 
-  const user = options
+  const user = props
   const handleSubmit = () => {
     try {
       createPost({ postBody, user, id })
