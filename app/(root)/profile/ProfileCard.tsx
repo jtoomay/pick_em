@@ -18,7 +18,7 @@ export default function ProfileCard({ favoriteTeam = "", userBio = "" }: UserInf
 
   return (
     <div className={WrapperStyles}>
-      <Image className={ImageStyles} width={150} height={150} src={imageURL} alt="Image URL" />
+      {imageURL && <Image className={ImageStyles} width={150} height={150} src={imageURL} alt="Image URL" />}
       <div className={ProfileCardTextStyles}>
         <span className={NameStyles}>{FullName}</span>
         {favoriteTeam.length > 1 && <span className={SmallerNameStyles}>{favoriteTeam}</span>}
