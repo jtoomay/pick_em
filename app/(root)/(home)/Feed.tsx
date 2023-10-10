@@ -30,7 +30,7 @@ function Post(post: PostProps) {
   )
 }
 
-const Wrapper = `w-full h-0 min-h-full bg-red-100 flex-1 flex flex-col gap-6 px-6 py-4`
+const Wrapper = `w-full h-0 min-h-full flex-1 flex flex-col gap-6 px-6 py-4`
 const PostsWrapper = `flex flex-col gap-2 w-fit bg-brown-100 `
 const Header = `text-3xl font-bold text-white`
 
