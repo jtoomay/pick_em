@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react"
-import Close from "../../../public/assets/SVG/close.svg"
-import Plus from "../../../public/assets/SVG/plus.svg"
+import Close from "../../../public/assets/SVG/Close.svg"
+import Plus from "../../../public/assets/SVG/Plus.svg"
 import Image from "next/image"
 import { createPost } from "@/app/lib/actions/posts.actions"
 
