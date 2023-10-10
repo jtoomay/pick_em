@@ -45,7 +45,7 @@ function NavItem({ link }: NavItemProps) {
 function ProfileCircle() {
   return (
     <div className={ProfileCardStyles}>
-      <UserButton showName={true} />
+      <UserButton afterSignOutUrl="/" showName={true} />
     </div>
   )
 }

@@ -1,14 +1,16 @@
 import { getPosts } from "@/app/lib/actions/posts.actions"
+import Paginator from "./Paginator"
 
-export default function Feed(posts: any) {
+export default function Feed({ posts, hasMorePosts }: any) {
   return (
     <div className={Wrapper}>
       <h1 className={Header}> Posts </h1>
       <div className={PostsWrapper}>
-        {posts.posts.map((post: any, i: number) => {
+        {posts.map((post: any, i: number) => {
           return <Post post={post} key={post.id} />
         })}
       </div>
+      <Paginator hasMorePosts={hasMorePosts} />
     </div>
   )
 }

@@ -1,18 +1,21 @@
 import mongoose from "mongoose"
 
 const postSchema = new mongoose.Schema({
-  id: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  user: {
+  userID: {
     type: String,
     required: true,
   },
   postBody: {
     type: String,
     required: true,
+  },
+  user: {
+    type: String,
+    required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
   },
 })
 

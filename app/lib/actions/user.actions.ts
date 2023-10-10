@@ -3,6 +3,7 @@
 import { auth, currentUser } from "@clerk/nextjs"
 import { connectToDB } from "../mongoose"
 import User from "../models/user.model"
+import { revalidatePath } from "next/cache"
 
 export async function getUser() {
   connectToDB()
@@ -36,6 +37,7 @@ export async function updateUser(options: UserUpdateOptions) {
   const clerkUser = auth()
   try {
     await User.findOneAndUpdate({ id: clerkUser.userId }, { $set: options }, { upsert: true })
+    revalidatePath("/profile")
   } catch (err) {
     console.log("Error Message: ", err)
   }
