@@ -10,7 +10,7 @@ export default function Feed({ posts, hasMorePosts }: any) {
           return <Post post={post} key={post.id} />
         })}
       </div>
-      {/* <Paginator hasMorePosts={hasMorePosts} /> */}
+      <Paginator hasMorePosts={hasMorePosts} />
     </div>
   )
 }
