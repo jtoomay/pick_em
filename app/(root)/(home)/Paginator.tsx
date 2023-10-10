@@ -19,13 +19,16 @@ export default function Paginator({ hasMorePosts }: { hasMorePosts: boolean }) {
   }
 
   return (
-    <div>
-      <button disabled={page === 1} onClick={pageLeft}>
+    <div className={Wrapper}>
+      <button className={ButtonStyles} disabled={page === 1} onClick={pageLeft}>
         Prev Page
       </button>
-      <button disabled={!hasMorePosts} onClick={pageRight}>
+      <button className={ButtonStyles} disabled={!hasMorePosts} onClick={pageRight}>
         Next Page
       </button>
     </div>
   )
 }
+
+const Wrapper = `flex gap-4 `
+const ButtonStyles = `bg-gray-200 rounded-xl px-4 py-3 text-gray-700 font-semibold`
