@@ -14,9 +14,9 @@ export default async function Home({ searchParams }: any) {
     <div className={Wrapper}>
       {/* <TestInput user={user} /> */}
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
-      {/* <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} /> */}
+      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
     </div>
   )
 }
 
-const Wrapper = "h-0 min-h-fit flex-1 w-full flex flex-col"
+const Wrapper = "h-0 min-h-fit flex-1 w-full flex flex-col p-[var(--padding)]"
