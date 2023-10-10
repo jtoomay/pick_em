@@ -22,8 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       }}
     >
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className + " " + WrapperStyles}>{children}</body>
       </html>
     </ClerkProvider>
   )
 }
+
+const WrapperStyles = `bg-slate-800 min-h-fit`
