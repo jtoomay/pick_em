@@ -3,7 +3,6 @@
 import { getUser } from "@/app/lib/actions/user.actions"
 import React from "react"
 import FavoriteTeam from "./FavoriteTeam"
-import { UserProfile } from "@clerk/nextjs"
 import ProfileCard from "./ProfileCard"
 import Bio from "./Bio"
 

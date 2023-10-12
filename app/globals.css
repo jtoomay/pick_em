@@ -9,6 +9,7 @@
 
   /* Custom Variables */
   --padding: 1.5rem;
+  --headerSize: 104px;
 }
 
 @media (prefers-color-scheme: dark) {
