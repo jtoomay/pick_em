@@ -11,10 +11,10 @@ export default async function Home({ searchParams }: any) {
   const { posts, hasMorePosts } = await getPosts(searchParams.page ?? 1)
 
   return (
-    <div className={Wrapper}>
+    <div id="page.tsx" className={Wrapper}>
       {/* <TestInput user={user} /> */}
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
-      {/* <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} /> */}
+      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
     </div>
   )
 }
