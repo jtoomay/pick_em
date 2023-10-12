@@ -19,4 +19,4 @@ export default async function Home({ searchParams }: any) {
   )
 }
 
-const Wrapper = `h-full w-full flex flex-col px-[var(--padding)] pt-[var(--padding)]`
+const Wrapper = `w-full flex flex-col px-[var(--padding)] pt-[var(--padding)] bg-green-500 pb-40`
