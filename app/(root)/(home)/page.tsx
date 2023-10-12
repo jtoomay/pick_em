@@ -13,8 +13,8 @@ export default async function Home({ searchParams }: any) {
   return (
     <div id="page.tsx" className={Wrapper}>
       {/* <TestInput user={user} /> */}
-      {/* <Feed posts={posts} hasMorePosts={hasMorePosts} />
-      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} /> */}
+      <Feed posts={posts} hasMorePosts={hasMorePosts} />
+      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
     </div>
   )
 }
