@@ -10,4 +10,4 @@ export default function layout({ children }: { children: React.ReactNode }) {
   )
 }
 
-const Wrapper = `flex flex-col h-fit min-h-full`
+const Wrapper = `flex flex-col h-full`
