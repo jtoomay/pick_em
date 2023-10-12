@@ -29,4 +29,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   )
 }
 
-const WrapperStyles = `bg-slate-800 pb-[var(--spacing)]`
+const WrapperStyles = `bg-slate-800 pb-[var(--padding)] px-[var(--padding)]`
