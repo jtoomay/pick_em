@@ -1,3 +1,7 @@
 export default function layout({ children }: { children: React.ReactNode }) {
-  return <div className="h-full flex justify-center items-center">{children}</div>
+  return (
+    <div id="layout" className="h-full flex justify-center items-center">
+      {children}
+    </div>
+  )
 }
