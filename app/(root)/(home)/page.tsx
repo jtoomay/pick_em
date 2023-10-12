@@ -11,7 +11,7 @@ export default async function Home({ searchParams }: any) {
   const { posts, hasMorePosts } = await getPosts(searchParams.page ?? 1)
 
   return (
-    <div id="page.tsx" className={Wrapper}>
+    <div id="HomepageWrapper" className={Wrapper}>
       {/* <TestInput user={user} /> */}
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
       <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
@@ -19,4 +19,4 @@ export default async function Home({ searchParams }: any) {
   )
 }
 
-const Wrapper = `h-full w-full flex flex-col px-[var(--padding)] bg-red-500`
+const Wrapper = `h-full w-full flex flex-col bg-red-500`
