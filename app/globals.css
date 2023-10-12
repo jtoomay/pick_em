@@ -28,7 +28,6 @@ html,
 body,
 :root {
   box-sizing: border-box;
-  min-height: 100dvh;
 }
 
 #RootLayout > div:nth-child(2) {
