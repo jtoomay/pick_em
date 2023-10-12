@@ -8,9 +8,8 @@ interface PostProps {
 }
 export default function Post(props: PostProps) {
   const { post } = props
-  console.log("🚀 ~ file: Post.tsx:9 ~ Post ~ post:", post)
   const { user } = useUser()
-  const imageUrl = user?.imageUrl
+  //   const imageUrl = user?.imageUrl
   return (
     <div className={PostWrapper}>
       <div className={ContentWrapper}>
