@@ -28,5 +28,10 @@ html,
 body,
 :root {
   box-sizing: border-box;
-  min-height: 100dvh;
+}
+
+#RootLayout > div:nth-child(2) {
+  height: 0;
+  flex: 1;
+  background: orange !important;
 }
