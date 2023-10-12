@@ -12,11 +12,13 @@ export default async function Home({ searchParams }: any) {
 
   return (
     <div className={Wrapper}>
-      {/* <TestInput user={user} /> */}
+      {/* <TestInput user={user} />
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
-      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
+      <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} /> */}
+      <div id="testDiv" className="h-1/2 w-1/2 bg-green-500" />
+      <div id="testDiv" className="h-1/2 w-1/2 bg-blue-500" />
     </div>
   )
 }
 
-const Wrapper = `h-full w-full flex flex-col pb-40`
+const Wrapper = `h-full w-full flex flex-col`
