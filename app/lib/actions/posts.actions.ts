@@ -26,7 +26,8 @@ export async function createPost(options: PostProps) {
   }
 }
 
-const pageSize = 4
+//* Posts Pagination
+const pageSize = 10
 export async function getPosts(pageNumber = 1) {
   connectToDB()
   try {
