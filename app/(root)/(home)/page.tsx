@@ -19,4 +19,4 @@ export default async function Home({ searchParams }: any) {
   )
 }
 
-const Wrapper = `h-full w-full flex flex-col bg-red-500`
+const Wrapper = `min-h-full w-full flex flex-col bg-yellow-500`
