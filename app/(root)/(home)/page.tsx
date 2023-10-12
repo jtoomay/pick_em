@@ -12,11 +12,10 @@ export default async function Home({ searchParams }: any) {
 
   return (
     <div id="HomepageWrapper" className={Wrapper}>
-      {/* <TestInput user={user} /> */}
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
       <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} />
     </div>
   )
 }
 
-const Wrapper = `w-full flex flex-col bg-purple-300`
+const Wrapper = `w-full flex flex-col`

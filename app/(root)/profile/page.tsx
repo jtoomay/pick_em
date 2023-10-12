@@ -12,7 +12,7 @@ export default async function Profile() {
   const user = await getUser()
 
   return (
-    <div className="flex flex-col gap-4 w-full bg-green-500">
+    <div className="flex flex-col gap-4 w-full ">
       <ProfileCard favoriteTeam={user.favoriteTeam} userBio={user.bio} />
       <FavoriteTeam defaultTeam={user.favoriteTeam} />
       <Bio userBio={user.bio} />

@@ -31,10 +31,10 @@ export default function NewPost(props: Props) {
   return (
     <>
       <button
-        className="fixed bottom-4 right-4  rounded-full bg-white transition-all p-2 hover:scale-110"
+        className="fixed bottom-4 right-4 rounded-full bg-white transition-all p-2 hover:scale-110"
         onClick={() => dialogRef.current.showModal()}
       >
-        <Image src={Plus} height={25} width={25} alt="New Post" />
+        <Image src={Plus} height={35} width={35} alt="New Post" />
       </button>
       <dialog ref={dialogRef} className={DialogStyles}>
         <div className={HeaderStyles}>
