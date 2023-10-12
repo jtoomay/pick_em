@@ -29,4 +29,5 @@ body,
 :root {
   height: 100%;
   box-sizing: border-box;
+  min-height: 100dvh;
 }
