@@ -29,4 +29,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   )
 }
 
-const WrapperStyles = `bg-slate-800 min-h-screen `
+const WrapperStyles = `bg-slate-800 `
