@@ -30,8 +30,6 @@ body,
   box-sizing: border-box;
 }
 
-#RootLayout > div:nth-child(2) {
-  height: 0;
-  flex: 1;
-  background: orange !important;
+html {
+  height: 100%;
 }
