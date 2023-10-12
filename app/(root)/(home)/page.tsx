@@ -15,10 +15,10 @@ export default async function Home({ searchParams }: any) {
       {/* <TestInput user={user} />
       <Feed posts={posts} hasMorePosts={hasMorePosts} />
       <NewPost firstName={user.firstName} lastName={user.lastName} username={user.userName} id={user.id} /> */}
-      <div id="testDiv" className="h-1/2 w-1/2 bg-green-500" />
-      <div id="testDiv" className="h-1/2 w-1/2 bg-blue-500" />
+      <div id="testDiv" className="h-[50vh] w-1/2 bg-green-500" />
+      <div id="testDiv" className="h-[50vh] w-1/2 bg-blue-500" />
     </div>
   )
 }
 
-const Wrapper = `h-full w-full flex flex-col`
+const Wrapper = `h-full w-full flex flex-col pb-20`
